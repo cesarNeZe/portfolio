@@ -43,3 +43,72 @@
 .wave2 .shape-fill {
   fill: #3A3535;
 }
+
+.stack-div{
+  width: 40vmin;
+  height: 300px;
+  border-radius: 10px;
+
+
+opacity: 2;
+transition: transform 800ms cubic-bezier(.32,.61,.39,.99);
+
+
+}
+
+.box{
+  height: 400px;
+  display:flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+background-color: black;
+margin-top: 20px;
+
+  
+}
+
+
+
+div.box > div.stack-div:first-child{
+  background-size: 100% 100%;
+  background-image: url('./images/project2.jpeg');
+ 
+  transform:translateX(0%) rotate(-3deg);
+}
+div.box:hover > div.stack-div:first-child{
+  background-size: 100% 100%;
+  background-image: url('./images/project2.jpeg');
+  transform:translateX(40%)  rotate(0deg);
+}
+
+div.box > div.stack-div:nth-child(2){
+  background-size: 100% 100%;
+  background-image: url('./images/project1.jpeg');
+  transform:translateX(0) rotate(180deg);
+}
+div.box:hover > div.stack-div:nth-child(2){
+  background-size: 100% 100%;
+  background-image: url('./images/project1.jpeg');
+  transform:translateX(70%) rotate(0deg);
+}
+
+
+div.box > div.stack-div:nth-child(3){
+  background-size: 100% 100%;
+  background-image: url('./images/project3.jpeg');
+  background-color: green;
+  transform:translateX(10%) rotate(3deg);
+}
+div.box:hover > div.stack-div:nth-child(3){
+  background-size: 100% 100%;
+  background-image: url('./images/project3.jpeg');
+  background-color: green;
+  transform:translateX(100%) rotate(0deg);
+}
+
+.project-section{
+  background-color: black;
+  padding:20px;
+  margin-top: 20px;
+}

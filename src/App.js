@@ -4,11 +4,14 @@ import { Body } from "./layout/Body";
 import { Footer } from "./layout/Footer";
 import { Header } from "./layout/Header";
 import {Wave} from './component/Wave';
-import { Blob } from "./component/Blob";
+
+import { Skills } from "./whatIcanDo/Skills";
+import { Projects } from "./projects/Projects";
 
 import React from "react";
 
-import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
+
+
 
 
 export const ColorModeContext = React.createContext({
@@ -32,7 +35,6 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
      
         <Container
-   
         >
       
           <Header />
@@ -40,10 +42,14 @@ function App() {
           </Container>
           <Wave/>
           <Container>
+       <Skills/>
        
-          <Footer />
+          
           </Container>
-         
+          <Projects/>
+         <Container>
+          <Footer/>
+         </Container>
         
 
     </ColorModeContext.Provider>

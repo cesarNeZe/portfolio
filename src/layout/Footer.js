@@ -8,13 +8,14 @@ import React, { useState, useEffect ,useNavigate} from 'react';
 
 const StyledFooter = styled("footer")`
   ${({ theme, visible }) => `
+   margin-block :50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 16px;
+    
     flex-direction: column;
     transform: translateX(${visible ? '0' : '-70%'}); // Move from 0% to 100% on the x-axis
-    transition: transform 0.5s ease-out; // Adjusted transition property for movement only
+    transition: transform 0.2s ease-out; // Adjusted transition property for movement only
   `}
 `;
 
@@ -62,7 +63,7 @@ export const Footer = () => {
     };
 
   return (
-      <StyledFooter visible={visible}>
+      <StyledFooter visible={visible} >
         <Typography variant="h4">Lets Get in Touch</Typography>
         <Stack direction="row" spacing={1}>
             <Link href='https://www.linkedin.com/in/cezar-zaitoun'>

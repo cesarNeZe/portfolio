@@ -1,16 +1,16 @@
 import React from "react";
 import Box from "@mui/material/Button";
-import Cesar from '../images/me.JPG';
-import { styled, createTheme } from '@mui/material/styles';
-import { Grid, Typography } from "@mui/material";
-import border from '../images/border.svg'
-import untitle from '../images/borderdesign.png';
-import newborder from '../images/blackborder.png';
-import square from '../images/desig.svg'
-import square2 from '../images/square2.svg'
+import Cesar from "../images/me.JPG";
+import { styled, createTheme } from "@mui/material/styles";
+import { Grid, Link, Typography } from "@mui/material";
+import border from "../images/border.svg";
+import untitle from "../images/borderdesign.png";
+import newborder from "../images/blackborder.png";
+import square from "../images/desig.svg";
+import square2 from "../images/square2.svg";
 import { Blob } from "../component/Blob";
 
-const theme = createTheme(); 
+const theme = createTheme();
 
 // const StyledImage = styled('img')`
 //   ${({ theme }) => `
@@ -27,8 +27,8 @@ const theme = createTheme();
 //   }
 //   `}
 // `;
-const BorderDiv = styled('div')`
- ${({ theme }) =>`
+const BorderDiv = styled("div")`
+  ${({ theme }) => `
  
    
     background-color:#ded1c8;
@@ -36,16 +36,16 @@ const BorderDiv = styled('div')`
     border-image-repeat: round;
     border-image-slice: 24%;
     border-image-source: url(${square2});
-`  };
-`
-const AnimatedImage = styled('img')`
+`};
+`;
+const AnimatedImage = styled("img")`
   ${({ theme }) => `
  
 
   height:300px;
  
   // border-image-source:url(/static/media/blackborder.c7d7328f6ba7e2f5a962.png);  
-  transition: ${theme.transitions.create('transform', {
+  transition: ${theme.transitions.create("transform", {
     duration: theme.transitions.duration.standard,
   })};
   &:hover {
@@ -55,40 +55,26 @@ const AnimatedImage = styled('img')`
 `;
 
 export const Body = () => {
-  
-    const skills=[{
-        id:1,
-        name:'HTML'
-    },
-    {
-        id:2,
-        name:'CSS'
-    }]
-    
+
+
   return (
+    <Grid container spacing={2} mt={2}>
+      <Grid item xs={6} display='flex' flexDirection='column' justifyContent='center' alignItems='flex-start'>
+        <Typography variant="h2" color="darkblue" sx={{fontSize:25, fontWeight:700}}>
+          Frontend Develper (React && Angular){" "} <Typography variant="span">&#9996;</Typography>
+        </Typography>
 
-    <Grid container spacing={2} mt={2} >
-      <Grid item xs={6}>
-        <Typography variant="h2" color="textPrimary">Hello My Name is <strong color="#23123">Cesar Zaitoun</strong></Typography>
-     
-        <Typography variant='body1' color="textPrimary">Analytical thinker skilled in developing responsive web and mobile applications using React and Angular, I bring two years of experience in Frontend Development and Quality Assurance. Proficient in ensuring top-notch production quality through strategic implementation of automated processes, I navigate complex manufacturing workflows with ease. My</Typography>
-
-        {skills.map((skill)=>(
-          <Box component='div' key={skill.id} mt={2}>
-            <Typography variant="h3" color="textPrimary">{skill.name}</Typography>
-          </Box>
-        ))}
+        <Typography variant="body1" color="textPrimary" mt={2}>
+          Hello my name is Cesar Zaitoun a software engineer,
+        </Typography>
+        <Typography variant='body1'>Let have a chat &#128073;&#160;  &#160;&#160;<Link  href='https://calendly.com/cesarzaitoun/1to1-meeting'>Calendly</Link>
+        </Typography> 
+    
       </Grid>
 
-      <Grid item xs={6} display='flex' justifyContent='center'>
-
-       <Blob></Blob>
-
-
-
+      <Grid item xs={6} display="flex" justifyContent="center">
+        <Blob></Blob>
       </Grid>
     </Grid>
- 
-
   );
 };
