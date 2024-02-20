@@ -22,21 +22,7 @@ const StyledFooter = styled("footer")`
 export const Footer = () => {
  
     const [visible, setVisible] = useState(false);
-    function handleClick(button){
-        if(button == 'linkedin'){
-            console.log('linkedin')
-
-        }
-        if(button == 'github'){
-            console.log('git')
-        }
-        if(button == 'calendly'){
-
-        }
-        if(button == 'instagram'){
-            console.log('insta')
-        }
-    }
+  
 
     useEffect(() => {
       const transitionEndHandler = () => {
@@ -67,20 +53,16 @@ export const Footer = () => {
         <Typography variant="h4">Lets Get in Touch</Typography>
         <Stack direction="row" spacing={1}>
             <Link href='https://www.linkedin.com/in/cezar-zaitoun'>
-          <IconButton color="info" aria-label="LinkedIn"  onClick={()=>handleClick('linkedin')}>
+          <IconButton color="info" aria-label="LinkedIn"  >
             <LinkedInIcon />
           </IconButton>
           </Link>
           <Link href='https://github.com/cesarNeZe'>
-          <IconButton color="secondary" aria-label="GitHub"  onClick={()=>handleClick('github')}>
+          <IconButton color="secondary" aria-label="GitHub"  >
             <GitHubIcon />
           </IconButton>
           </Link>
-          <Link href='https://www.instagram.com/cezar_zaitoun'>
-          <IconButton color="primary" aria-label="Instagram"  onClick={()=>handleClick('instagram')}>
-            <InstagramIcon />
-          </IconButton>
-          </Link>
+     
         </Stack>
       </StyledFooter>
   );

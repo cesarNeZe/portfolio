@@ -1,58 +1,12 @@
 import React from "react";
-import Box from "@mui/material/Button";
-import Cesar from "../images/me.JPG";
-import { styled, createTheme } from "@mui/material/styles";
+
 import { Grid, Link, Typography } from "@mui/material";
-import border from "../images/border.svg";
-import untitle from "../images/borderdesign.png";
-import newborder from "../images/blackborder.png";
-import square from "../images/desig.svg";
-import square2 from "../images/square2.svg";
+
 import { Blob } from "../component/Blob";
 
-const theme = createTheme();
 
-// const StyledImage = styled('img')`
-//   ${({ theme }) => `
-//   cursor: pointer;
-//   border-image: url('../images/border.svg') 30round;
-//   border: 5px solid transparent;
-//   background-color: ${theme.palette.primary.main};
-//   transition: ${theme.transitions.create(['background-color', 'transform'], {
-//     duration: theme.transitions.duration.standard,
-//   })};
-//   &:hover {
-//     background-color: ${theme.palette.secondary.main};
-//     transform: scale(1.3);
-//   }
-//   `}
-// `;
-const BorderDiv = styled("div")`
-  ${({ theme }) => `
- 
-   
-    background-color:#ded1c8;
-    border: 15px solid red;
-    border-image-repeat: round;
-    border-image-slice: 24%;
-    border-image-source: url(${square2});
-`};
-`;
-const AnimatedImage = styled("img")`
-  ${({ theme }) => `
- 
 
-  height:300px;
- 
-  // border-image-source:url(/static/media/blackborder.c7d7328f6ba7e2f5a962.png);  
-  transition: ${theme.transitions.create("transform", {
-    duration: theme.transitions.duration.standard,
-  })};
-  &:hover {
-    transform: scale(1.1); // Adjust the scale factor as needed
-  }
-  `}
-`;
+
 
 export const Body = () => {
 

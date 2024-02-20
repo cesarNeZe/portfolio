@@ -20,7 +20,7 @@ export const Projects =()=>{
   <div className="stack-div"><image src={project3}></image></div>
     </div>
     <Typography   variant='h6' color='white'>Project links and description</Typography>
-    <Typography color='white'>1. Ziqaq : see all the historical sites in Palestine as a virtual tour  <Link href='https://travelzmate.com/'>Ziqaq</Link></Typography>
+    <Typography color='white'>1. Ziqaq : see all the historical sites in Palestine as a virtual tour  <Link href='https://ziqaq.ps/landing'>Ziqaq</Link></Typography>
 
     <Typography color='white'>2. TravelzMate : For turkish local travelz as users can sign up and register a tour in Turkey <Link href='https://travelzmate.com/'>TravelzMate</Link></Typography>
     <Typography color='white'>3. SalesScript : Manage all sales and manufacturing from on website  <Link href='https://s2cript.com/'>SalesScript</Link></Typography>
