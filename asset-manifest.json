@@ -1,26 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1b6ce8bf.css",
-    "main.js": "/portfolio/static/js/main.e972be44.js",
+    "main.js": "/portfolio/static/js/main.abef0af6.js",
     "static/js/592.edeaf6a6.chunk.js": "/portfolio/static/js/592.edeaf6a6.chunk.js",
     "static/media/stars.jpeg": "/portfolio/static/media/stars.3e9068246e193fada4d9.jpeg",
     "static/media/me.JPG": "/portfolio/static/media/me.7f1688bc3438693a3165.JPG",
-    "static/media/blackborder.png": "/portfolio/static/media/blackborder.c7d7328f6ba7e2f5a962.png",
-    "static/media/borderdesign.png": "/portfolio/static/media/borderdesign.7661e590eba94949bb53.png",
     "static/media/project2.jpeg": "/portfolio/static/media/project2.02915b903bd5158b5e82.jpeg",
     "static/media/project1.jpeg": "/portfolio/static/media/project1.e1ecfc43c3fdb8a217ec.jpeg",
     "static/media/project3.jpeg": "/portfolio/static/media/project3.49b1dc64bf3d75cc06ee.jpeg",
     "static/media/Cesarlogo.png": "/portfolio/static/media/Cesarlogo.c33b52f01d111776da8d.png",
-    "static/media/border.svg": "/portfolio/static/media/border.08f22f4e564faac6f662afd2933a488b.svg",
-    "static/media/square2.svg": "/portfolio/static/media/square2.5c31860c4853e15efefa4cd39497dfa3.svg",
-    "static/media/desig.svg": "/portfolio/static/media/desig.dd98cda233c0559d53ce61661cedaf4f.svg",
     "index.html": "/portfolio/index.html",
     "main.1b6ce8bf.css.map": "/portfolio/static/css/main.1b6ce8bf.css.map",
-    "main.e972be44.js.map": "/portfolio/static/js/main.e972be44.js.map",
+    "main.abef0af6.js.map": "/portfolio/static/js/main.abef0af6.js.map",
     "592.edeaf6a6.chunk.js.map": "/portfolio/static/js/592.edeaf6a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1b6ce8bf.css",
-    "static/js/main.e972be44.js"
+    "static/js/main.abef0af6.js"
   ]
 }
