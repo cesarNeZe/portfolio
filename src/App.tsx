@@ -30,7 +30,7 @@ const App: React.FC = () => {
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <Box sx={{backgroundColor: "#2d83aa"}}>
+      <Box sx={{backgroundColor: "#0a72a2"}}>
 
       <Container>
         <Header />

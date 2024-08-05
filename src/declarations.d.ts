@@ -28,5 +28,12 @@ declare module './component/Wave' {
     const Wave: FC;
     export default Wave;
   }
+  // src/reportWebVitals.d.ts
+
+declare module './reportWebVitals' {
+    const reportWebVitals: (onPerfEntry?: (metric: any) => void) => void;
+    export default reportWebVitals;
+  }
+  
   
   
