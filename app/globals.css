@@ -8,4 +8,76 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: green;
+  border: 3px solid green;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  border-radius:5px;
 
+}
+a:before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: grey;
+z-index: -1;
+transform: translateX(-100%);
+transition: all 1s;
+}
+
+a:hover:before{
+  transform: translateX(0);
+}
+a:hover{
+  color:white;
+}
+.cross-button {
+  text-decoration: none;
+  color: green;
+  border: 3px solid green;
+  padding: 10px 15px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  border-radius:5px;
+}
+.cross-button:before{
+  content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: grey;
+z-index: -1;
+transform: rotateX(90deg);
+transition: all 1s;
+}
+.cross-button:after{
+  content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: grey;
+z-index: -1;
+transform: rotateY(90deg);
+transition: all 1s;
+}
+.cross-button:hover:before{
+  transform: rotateX(0deg);
+}
+.cross-button:hover:after{
+  transform: rotateY(0deg);
+}
+.cross-button:hover{
+  color:white;
+}

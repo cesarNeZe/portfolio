@@ -36,11 +36,11 @@ const Hero = () => {
             </div>
             <div className='flex justify-center gap-2'>
 
-                <a href="https://calendly.com/cesarzaitoun/1to1-meeting" className='btn btn-outline '>
+                <a href="https://calendly.com/cesarzaitoun/1to1-meeting">
                     Lets talk
                 </a>
-                <button className='btn btn-primary'>
-                    Lets talk
+                <button className='cross-button'>
+                    Chat
                 </button>
 
             </div>
