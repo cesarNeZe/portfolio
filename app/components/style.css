@@ -1,0 +1,32 @@
+
+.card-container{
+    overflow: hidden;
+
+}
+
+.caption {
+    position : absolute;
+    top: 0 ;
+    left: 0;
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.5s;
+}
+.card-container img{
+    transition: all 0.5s;
+    width:100%;
+}
+.card-container:hover .caption{
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.card-container:hover img{
+    transform: scale(1.5) rotate(-15deg);
+}

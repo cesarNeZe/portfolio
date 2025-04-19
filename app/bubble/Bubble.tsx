@@ -1,8 +1,8 @@
 "use client"; // Ensure this runs only on the client side
 
 import { useEffect, useState } from "react";
-import Lottie from "lottie-react";
 import Hero from "./Hero";
+import Lottie from "lottie-react";
 
 const BubbleBorder = () => {
     const [animationData, setAnimationData] = useState(null);

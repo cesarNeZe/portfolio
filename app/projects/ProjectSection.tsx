@@ -1,4 +1,5 @@
 import React from 'react'
+import Cards from '../components/Cards'
 
 const ProjectSection = () => {
     return (
@@ -6,9 +7,22 @@ const ProjectSection = () => {
             <h1 className='text-4xl'>
                 Featured Website Projects
             </h1>
-            <div className='card'>
-                <div className='card-body'>
-                    here
+            <div className='flex flex-row gap-1 w-full'>
+
+                <div className='card'>
+                    <div className='card-body'>
+                        <Cards />
+                    </div>
+                </div>
+                <div className='card'>
+                    <div className='card-body relative'>
+                        <Cards />
+                    </div>
+                </div>
+                <div className='card'>
+                    <div className='card-body'>
+                        <Cards />
+                    </div>
                 </div>
             </div>
         </div>

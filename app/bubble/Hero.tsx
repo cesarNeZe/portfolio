@@ -43,6 +43,11 @@ const Hero = () => {
                     Chat
                 </button>
 
+                <button className='flip-button w-40'>
+                    flip
+                </button>
+
+
             </div>
 
         </div>
